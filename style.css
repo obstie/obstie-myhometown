@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: .9em;
+    line-height: 1.4em;
+    background-color: lightblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    line-height: 1.7em;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+     "h h h h h h"
+     "a a a a a a"
+     "c c c c c c"
+     "t t t t t t"
+     "p p p p p p"
+     "f f f f f f"
+    ;
+}
+.hero-section {
+    grid-area: h;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-image: url(../images/hero1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    color: rgb(245, 245, 245);
+    text-shadow: 0 0 1px rgb(104, 95, 95);
+    padding: 30px;
+}
+.hero-content {
+    width: 70%;
+}
+.cpt {
+    border-bottom: 4px solid wheat;
+}
+.btn {
+    padding: 10px 15px;
+    background-color: antiquewhite;
+    color: black;
+    font-weight: 600;
+    line-height: 80px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+.about-section {
+    grid-area: a;
+    padding: 30px;
+    background-color: cornsilk;
+    margin-top: 20px;
+}
+#card-heading {
+    text-align: center;
+}
+.card-section {
+    grid-area: c;
+    background-color: rgb(151, 212, 214);
+    margin-top: 20px;
+}
+.card-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 200px;
+    border: 2px solid seashell;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px lightslategray;
+    background-color: rgb(151, 212, 230);
+    margin-bottom: 30px;
+}
+.card-img {
+    width: 200px;
+}
+.tour-section {
+    grid-area: t;
+    background-color: gainsboro;
+    height: 300px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.tour-text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    line-height: .7em;
+
+}
+.tour-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    min-width: 150px;
+    max-width: 400px;
+    border: none;
+    border-radius: 4px;
+    padding: 30px;
+    background-color: bisque;
+}
+.tour-img {
+    max-width: 200px;
+}
+.places-section {
+    grid-area: p;
+    background-color: beige;
+    height: 140px;
+    text-align: center;
+    padding: 20px;
+}
+.placebtn {
+    border: 2px solid grey;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: rgb(248, 217, 177);
+}
+.footer-section {
+    grid-area: f;
+    background-color: darkgrey;
+    margin-top: 30px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.footer-content{
+    text-align: center;
+}
